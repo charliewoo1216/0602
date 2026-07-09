@@ -25,6 +25,7 @@ class GlossaryScanner(
 
         val existingLower = existingTerms.map { it.term.lowercase() }.toSet()
         val result = responseParser.parseWithRetry<GlossaryScanResult>(
+            onRawTextFallback = {},
             generate = {
                 llmSessionManager.generateResponse(
                     promptBuilder.buildGlossaryScanPrompt(combinedText, existingTerms.map { it.term }),

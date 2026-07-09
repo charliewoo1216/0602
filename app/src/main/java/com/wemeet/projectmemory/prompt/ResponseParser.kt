@@ -11,11 +11,12 @@ import kotlinx.serialization.json.Json
  */
 class ResponseParser {
 
-    private val json = Json { ignoreUnknownKeys = true }
+    @PublishedApi
+    internal val json = Json { ignoreUnknownKeys = true }
 
     suspend inline fun <reified T> parseWithRetry(
         maxAttempts: Int = 2,
-        crossinline onRawTextFallback: suspend (String) -> Unit = {},
+        crossinline onRawTextFallback: suspend (String) -> Unit,
         crossinline generate: suspend () -> String,
     ): T? {
         var lastRaw: String? = null

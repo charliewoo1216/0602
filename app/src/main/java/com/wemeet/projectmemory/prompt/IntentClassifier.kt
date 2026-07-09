@@ -17,6 +17,7 @@ class IntentClassifier(
         }
 
         val result = responseParser.parseWithRetry<IntentClassificationResult>(
+            onRawTextFallback = {},
             generate = { llmSessionManager.generateResponse(promptBuilder.buildIntentClassificationPrompt(sttText)) },
         )
         val intent = if (result?.intent == "glossary_command") MemoIntent.GLOSSARY_COMMAND else MemoIntent.DOCUMENT_UPDATE
