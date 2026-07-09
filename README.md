@@ -43,7 +43,8 @@ prompt/               PromptBuilder, ResponseParser(JSON 파싱+재시도), Inte
                       GlossaryScanner, PurposePromptTemplates(목적별 지시문)
 
 overlay/              OverlayService(항상 떠있는 녹음 버튼, Foreground Service), 권한 헬퍼
-stt/                  SpeechToTextManager — 프레임워크 SpeechRecognizer 래퍼(온라인 전용)
+stt/                  SpeechToTextManager — 프레임워크 SpeechRecognizer 래퍼(온라인 전용),
+                      블루투스 헤드셋 연결 시 SCO 오디오 링크 자동 개설/해제
 
 ui/                   Jetpack Compose 화면 — projectlist/projectdetail/projectsettings/newproject
 di/AppContainer.kt     수동 서비스 로케이터(Hilt 미사용) — Application에서 한 번 생성
