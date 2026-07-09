@@ -73,6 +73,7 @@ dependencies {
     implementation(libs.kotlinx.coroutines.android)
     implementation(libs.kotlinx.serialization.json)
     implementation(libs.squareup.okhttp3)
+    implementation(libs.androidx.documentfile)
 
     // On-device Gemma inference (LiteRT-LM). Requires the model file to be
     // downloaded separately at runtime; see llm/download/ModelDownloadWorker.
