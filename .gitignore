@@ -1,0 +1,19 @@
+*.iml
+.gradle/
+/local.properties
+/.idea/
+.DS_Store
+/build/
+/captures/
+.externalNativeBuildCatalyst
+.cxx/
+local.properties
+
+app/build/
+*.apk
+*.aab
+
+# Downloaded on-device LLM model files (large, fetched at runtime)
+*.task
+*.litertlm
+/models/

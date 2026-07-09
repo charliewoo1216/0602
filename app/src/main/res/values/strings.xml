@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">프로젝트 메모리</string>
+    <string name="overlay_permission_rationale">떠있는 녹음 버튼을 표시하려면 다른 앱 위에 표시 권한이 필요합니다.</string>
+    <string name="notif_channel_processing">메모 처리</string>
+    <string name="notif_channel_overlay">녹음 오버레이</string>
+</resources>
