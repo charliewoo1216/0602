@@ -14,6 +14,7 @@
 
 ```
 ./gradlew assembleDebug
+./gradlew testDebugUnitTest   # PromptBuilder/ResponseParser/Purpose 등 순수 로직 단위 테스트
 ```
 
 Android Studio(최신 Hedgehog 이상)로 루트 디렉터리를 열면 그대로 인식된다. `minSdk 26 / compileSdk 34`.
